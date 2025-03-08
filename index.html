@@ -3,59 +3,105 @@
     <head>
         <meta charset="utf-8">
         <title>Digital Planet VR</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="main-page">
         <div class="main-background">
+            <img class="kid-viar" src="img/kid_VR_main_page.png" width="450" height="350" alt="">
             <header class="page-header">
                 <nav class="main-nav">
                     <a href="#" class="logo">
-                        <img src="img/Logo Group.svg" width="193" height="28" alt="Логотип VR-планетария">
+                        <img src="img/logo.svg" width="28" height="28" alt="Логотип VR-планетария">
                     </a>
+                    <p class="logo-text">Digital Planet</p>
                     <ul class="site-navigation">
                         <li class="site-navigation-item">
                             <a href="#">О продукте</a>
                         </li>
+                        <li class="site-navigation-item-point">
+                            <img src="img/•.svg" width="4" height="5" alt="point">
+                        </li>
                         <li class="site-navigation-item">
                             <a href="#">Как работает</a>
+                        </li>
+                        <li class="site-navigation-item-point">
+                            <img src="img/•.svg" width="4" height="5" alt="point">
                         </li>
                         <li class="site-navigation-item">
                             <a href="#">Технология</a>
                         </li>
+                        <li class="site-navigation-item-point">
+                            <img src="img/•.svg" width="4" height="5" alt="point">
+                        </li>
                         <li class="site-navigation-item">
                             <a href="#">Вопросы</a>
+                        </li>
+                        <li class="site-navigation-item-point">
+                            <img src="img/•.svg" width="4" height="5" alt="point">
                         </li>
                         <li class="site-navigation-item">
                             <a href="#">Контакты</a>
                         </li>
                     </ul>
                     <button type="button" class="button-order">Заказать</button>
-                    <a href="tel:88005553575">8 (800) 555 35 75</a>
+                    <a class="contact" href="tel:88005553575">8 (800) 555 35 75</a>
                 </nav>
             </header>
             <main class="page-main">
                 <section class="main">
-                    <h1>Digital Planet VR</h1>
-                    <p></p>
-                    <button>Заказать</button>
-                    <button>Видео</button>
-                    <img class="boy-VR" src="" width="" height="" alt="Мальчик в VR-очках">
-                </section>
+                    <h1 class="main-title">Digital Planet VR</h1>
+                    <p class="main-text">Образовательный виртуальный планетарий в Новороссийске. Познавательное приключение в мир звёзд и галактик.</p>
+                    <div class="main-container-button">
+                        <button class="big-btn-order">
+                            <img src="img/btn-big-order.svg" width="31" height="31" alt="">
+                            <p class="btn-title">Заказать</p>
+                        </button>
+                        <button class="big-btn-video">
+                            <img src="img/video.svg" width="31" height="31" alt="">
+                            <p class="btn-title">Видео</p>
+                        </button>
+                    </div>
+                    <!--<img class="boy-VR" src="img/kid_VR_main_page.png" width="430" height="350" alt="Мальчик в VR-очках">-->
+                </section>   
             </main>
             <footer class="page-footer">
-                <ul class="social-list">
-                    <li class="social-list-item">
-                        <a href="#">
-                            <img src="img/placeholder.svg" width="" height="" alt="Facebook">
-                        </a>
-                    </li>
-                    <li class="social-list">
-                        <a href="#">
-                            <img src="img/placeholder.svg" width="" height="" alt="Вконтакте">
-                        </a>
-                    </li>
-                </ul>
-                <button type="button" class="more">Скролл вниз</button>
+                <div class="footer-container">
+                    <ul class="social-list">
+                        <li class="social-list-item">
+                            <a href="#">
+                                <img src="img/face.svg" width="11" height="22" alt="Facebook">
+                            </a>
+                        </li>
+                        <li class="social-list-item">
+                            <a href="#">
+                                <img src="img/vk.svg" width="28" height="15" alt="Вконтакте">
+                            </a>
+                        </li>
+                    </ul>
+                    <button type="button" class="button-scroll">
+                        <p class="button-scroll-text">Скролл вниз</p>
+                        <img src="img/footer-arow.svg" width="32" height="32" alt="icon">
+                    </button>
+                    <div class="hide-footer-container">
+                        <p class="footer-copyright">&copy;Digital Planet, 2019</p>
+                        <p class="footer-title">Детский VR планетарий. Все права защищены.</p>
+                        <ul class="hide-social-list">
+                            <li class="hide-social-list-item">
+                                <a href="#">
+                                    <img src="img/face.svg" width="8.25" height="16.5" alt="Facebook">
+                                </a>
+                            </li>
+                            <li class="hide-social-list-item">
+                                <a href="#">
+                                    <img src="img/vk.svg" width="21" height="11.25" alt="Вконтакте">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
             </footer>
         </div>
     </body>
