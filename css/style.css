@@ -1,56 +1,22 @@
-/*body {
-    margin: 0;
-    position: relative;
-    width: 1366px;
-    height: 768px;
-}
-
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/bg-page-one-photo.jpg);
-    background-size: cover;
-}
-
-.main-background {
-    margin: 0 auto;
-    position: relative;
-    width: 1366px;
-    height: 768px;
-}
-
-.main-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(45.97% 102.87% at -45.97% 45.57%, rgba(23, 26, 28, 0) 50.28%, #000 100%);
-    opacity: 0.4;
-    mix-blend-mode: normal;
-    z-index: -1;
-
-}*/
 body {
     margin: 0;
     font-family: "Ubuntu", sans-serif;
+    color: #FFFFFF;
 }
 
 body.main-page {
     background-image: url(../img/bg-page-one-photo.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+}
+
+/* не соответствует макету */
+body.product-page, body.explanation-page {
+    background-image: url(../img/background-pages.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
 }
 
 .main-background .kid-viar {
@@ -61,12 +27,9 @@ body.main-page {
     right: 0;
 }
 
-.page-header {
+.main-page-header {
     margin: 0 auto;
     width: 1239px;
-    /*height: 74px;*/
-
-    /*background-color: green;*/
 }
 
 .main-nav {
@@ -74,11 +37,14 @@ body.main-page {
 }
 
 .logo {
-    width: 28px;
-    height: 28px;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 193px;
     margin-top: 43px;
-    margin-right: 15px;
-    margin-bottom: 3px; 
+    margin-right: 80px;
+    margin-bottom: 3px;
+    display: flex;
+    
 }
 
 .logo img {
@@ -88,15 +54,13 @@ body.main-page {
 
 .logo-text {
     display: block;
-    margin-top: 46px;
-    margin-right: 80px;
-    margin-bottom: 7px;
-    
+    margin-top: 4px;
+    margin-left: 15px;
+    margin-bottom: 3px; 
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 .site-navigation {
@@ -130,7 +94,7 @@ body.main-page {
     display: block;
 }
 
-.button-order {
+.small-button-order {
     appearance: none;
     width: 108px;
     height: 34px;
@@ -149,7 +113,7 @@ body.main-page {
     margin-right: 20px;
 }
 
-.button-order:hover {
+.small-button-order:hover {
     background-color: #0dd1a2;
     border: 2px solid #0dd1a2;
     cursor: pointer;
@@ -168,8 +132,6 @@ margin-bottom: 7px;
 .page-main {
     margin: 0 auto;
     width: 1126px;
-    /*height: 632px;*/
-    /*background-color: brown;*/
 }
 
 .main {
@@ -184,7 +146,6 @@ margin-bottom: 7px;
     margin-bottom: 24px;
     font-weight: 400;
     font-size: 96px;
-    color: #FFFFFF;
 }
 
 .main-text {
@@ -194,7 +155,6 @@ margin-bottom: 7px;
     font-weight: 300;
     font-size: 17px;
     line-height: 150%;
-    color: #FFFFFF;
 }
 
 .main-container-button {
@@ -222,7 +182,7 @@ margin-bottom: 7px;
 
     border-radius: 3px;
     background-color: #15B28D;
-    border: 1px solid transparent; /* или transparent ???*/
+    border: 1px solid transparent;
     margin: 0;
     padding: 0;
 }
@@ -232,7 +192,7 @@ margin-bottom: 7px;
     cursor: pointer;
 }
 
-.btn-title {
+.big-btn-title {
     font-weight: 700;
     font-size: 21px;
     letter-spacing: 0.03em;
@@ -272,8 +232,7 @@ margin-bottom: 7px;
 .page-footer {
     margin: 0 auto;
     width: 1239px;
-    /*height: 32px;*/
-    /*padding-bottom: 30px;*/
+    padding-bottom: 30px;
 }
 
 .footer-container {
@@ -289,12 +248,20 @@ margin-bottom: 7px;
     justify-content: space-between;
     width: 76px;
     margin-right: 399px;
-    opacity: 0.64;
 }
 
 .social-list-item {
     width: 32px;
     height: 32px;
+    opacity: 0.64;
+}
+
+.social-list-item:first-child:hover {
+    opacity: 1;
+}
+
+.social-list-item:last-child:hover {
+    opacity: 1;
 }
 
 .social-list-item:first-child img {
@@ -315,6 +282,7 @@ margin-bottom: 7px;
     display: block;
 }
 
+/*надо поменять отсюда и */
 .button-scroll-text {
     margin: 0;
     font-weight: 400;
@@ -352,85 +320,318 @@ margin-bottom: 7px;
 
     margin-right: 420px;
 }
-
-.hide-footer-container {
-    display: none;
-    height: 24px;
+/*и до сюда*/
+h1 {
+    font-weight: 500;
+    font-size: 44px;
+}
+/* page product*/
+.site-navigation-item a.active {
+    color: #0dd1a2;
 }
 
-.footer-copyright {
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 130%;
-    color: #FFFFFF;
-    opacity: 0.64;
-
-    margin-top: 4px;
-    margin-left: 16px; /*уточнить этот размер*/
-    margin-bottom: 3px;
-    margin-right: 330px;
-}
-
-.footer-title {
-    width: 281px;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 130%;
-    color: #FFFFFF;
-    opacity: 0.64;
-    margin-top: 4px;
-    margin-bottom: 3px;
-    margin-right: 350px;
+.main-product-page {
+    width: 1239px;
+    margin: 0 auto;
     
 }
 
-.hide-social-list {
+.main-product-content {
+    margin-left: 26px;
+    margin-right: 26px;
+    margin-bottom: 13px;
+}
+
+.main-product-page-title {
+    width: 561px;
+    margin-top: 76px;
+    margin-bottom: 4px;
+}
+
+.line {
+    display: block;
+    margin: 0;
+    width: 591px;
+    border-top: 3px solid #0dd1a2;
+    margin-bottom: 50px;
+}
+
+.main-container {
+    display: flex;
+    gap: 0 58px;
+}
+
+.main-product-text-container {
+    width: 561px;
+    margin: 0;
+}
+
+.main-product-text-container p {
+    width: 440px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 150%;
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.product-page-title {
+    width: 192px;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: right;
+    margin-top: 45px;
+    margin-left: 446px;
+    margin-right: 545px;
+    margin-bottom: 5px;
+}
+
+.border {
+    width: 560px;
+    height: 276px;
+    position: relative;
+    margin-top: 97px;
+    border: 4px solid #0dd1a2;
+    position: relative;
+    z-index: -1;
+}
+
+/*изображение не соответствует макету. Надо как то его маштабировать что ли*/
+.product-gallery-img {
+    display: inline;
+    width: 560px;
+    height: 300px;
+    
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: -1;
+}
+
+.button-content {
+    display: flex;
+    width: 202px;
+    margin-left: 347px;
+    margin-top: 35px;
+    margin-right: 25px;
+}
+
+.button-content-text {
+    width: 82px;
+}
+
+.button-content p {
+    margin: 0;
+    width: 61px;
+    padding-top: 13px;
+    padding-right: 21px;
+    padding-bottom: 14px;
+    padding-left: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.button-content p span {
+    display: block-inline;
+}
+
+.button-content p .btn-content-text-right {
+    font-weight: 400;
+    color: #ababab;
+    opacity: 0.87;
+}
+
+.button-left, .button-right {
+    width: 60px;
+    padding: 0;
+    border: 1px solid #1c1c1c;
+    cursor: pointer;
+}
+
+/*стрелку при наведении не сделать зеленой, потому что
+svg вшит в верстку как изолированная картинка*/
+
+.product-gallery-button-left, .product-gallery-button-right  {
+    display: block;
+    padding-top: 16px;
+    padding-right: 26px;
+    padding-bottom: 16px;
+    padding-left: 26px;
+    background-color: #1c1c1c;
+}
+
+.fotter-product-page, .footer-explanation {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fotter-product-page img, .footer-explanation {
+    margin-bottom: 30px;
+}
+
+/* explanation */
+
+.main-explanation {
+    width: 1239px;
+    margin: 0 auto;
+    margin-bottom: 46px;
+}
+
+.explanation-title {
+    margin: 0;
+    margin-top: 76px;
+    margin-left: 26px;
+    margin-bottom: 55px;
+}
+
+.explanation-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 0;
+}
+
+.explanation ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
 
-    width: 57px;
+.explanation-card {
+    width: 535px;
+}
+
+.explanation-cards .explanation-card:first-child {
+    margin-left: 48px;
+    margin-right: 58px;
+}
+
+.explanation-cards .explanation-card:nth-child(2) {
+    margin-top: 17px;
+    margin-right: 63px;
+}
+
+.explanation-cards .explanation-card:nth-child(3) {
+    margin-left: 78px;
+    margin-right: 78px;
+    margin-bottom: 18px;
+}
+
+.explanation-cards .explanation-card:last-child {
+    margin-top: 17px;
+    margin-right: 13px;
+}
+
+.explanation-card-list {
     display: flex;
-    justify-content: space-between;
-    opacity: 0.64;
-
-    margin-right: 77px;
 }
 
-.hide-social-list-item {
-    width: 24px;
-    height: 24px;
+.explanation-item-photo {
+    position: relative;
 }
 
-.hide-social-list-item:first-child img {
-    padding-top: 3px;
-    padding-right: 8.25px;
-    padding-top: 4.5px;
-    padding-left: 7.5px;
+.explanation-border {
+    border: 2px solid #0dd1a2;
+    width: 193px;
+    height: 128px;
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
 }
 
-.hide-social-list-item:last-child img {
-    padding-top: 7px;
-    padding-right: 1.5px;
-    padding-bottom: 5.75px;
-    padding-left: 1.5px;
+.explanation-border img {
+    width: 195px;
+    height: 130px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
 }
 
-/*.main-background {
-    width: 1366px;
-    height: 768px;
+.explanation-border:first-child {
+    margin-bottom: 20px;
+}
+
+.item-text {
     margin: 0;
-    padding: 0;
-    background-image: url(../img/bg-page-one-photo.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: content;
-}*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color:#0DD1A2; 
+}
 
-.button-scroll:hover+.hide-footer-container {
-    display: flex;
+.item-text span {
+    display: block;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+    width: 17px;
+    height: 35px;
+    
+}
+
+.one {
+    position: absolute;
+    top: 110px; 
+}
+
+.one span {
+    margin-top: 3px;
+    margin-right: 11px;
+    margin-bottom: 2px;
+    margin-left: 11px;
+}
+
+.two {
+    position: absolute;
+    top: 114px;
+}
+
+.two span {
+    margin-top: 4px;
+    margin-right: 11px;
+    margin-bottom: 1px;
+    margin-left: 12px;
+}
+
+.three {
+    position: absolute;
+    top: 114px;
+}
+
+.three span {
+    margin-top: 4px;
+    margin-right: 12px;
+    margin-bottom: 3px;
+    margin-left: 12px; 
+}
+
+.four {
+    position: absolute;
+    top: 113px;
+}
+
+.four span {
+    margin-top: 3px;
+    margin-right: 11px;
+    margin-bottom: 2px;
+    margin-left: 11px;
+}
+
+.explanation-item-title {
+    margin: 0;
+    width: 110px;
+    font-weight: 700;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.explanation-item-text {
+    margin: 0;
+    width: 300px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 130%;
+    margin-bottom: 3px;
 }
