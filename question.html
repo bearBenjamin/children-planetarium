@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Planet VR</title>
+    <title>About Product</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="main-page">
-    <div class="main-background"> 
+<body class="question-page">
+    <header class="main-page-header">
         <header class="main-page-header">
             <nav class="main-nav">
                 <a href="index.html" class="logo">
@@ -59,7 +56,7 @@
                         </svg>
                     </li>
                     <li class="site-navigation-item">
-                        <a href="question.html">Вопросы</a>
+                        <a class="active" href="question.html">Вопросы</a>
                     </li>
                     <li>
                         <svg class="site-navigation-item-point" width="5" height="5">
@@ -74,72 +71,65 @@
                 <a class="contact" href="tel:88005553575">8 (800) 555 35 75</a>
             </nav>
         </header>
-        <main class="page-main">
-            <section class="main">
-                <h1 class="main-title">Digital Planet VR</h1>
-                <p class="main-text">Образовательный виртуальный планетарий в Новороссийске. Познавательное приключение
-                    в мир звёзд и галактик.</p>
-                <div class="main-container-button">
-                    <button class="big-btn-order">
-                        <svg width="31" height="31">
-                            <use xlink:href="icon.svg#order-icon"/>
-                        </svg>
-                        <p class="big-btn-title">Заказать</p>
-                    </button>
-                    <button class="big-btn-video">
-                        <svg width="31" height="31">
-                            <use xlink:href="icon.svg#video-icon"/>
-                        </svg>
-                        <p class="big-btn-title">Видео</p>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <footer class="page-footer">
-            <div class="footer-container">
-                <ul class="social-list">
-                    <li class="social-list-item">
-                        <a href="#">
-                            <svg class="facebook" width="11" height="22">
-                                <use xlink:href="icon.svg#facebook-icon"/>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a href="#">
-                            <svg class="vk" width="28" height="15">
-                                <use xlink:href="icon.svg#vk-icon"/>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" class="button-scroll">
-                    <p class="button-scroll-text">Скролл вниз</p>
-                    <svg class="arrow-down-icon" width="17" height="9">
-                        <use xlink:href="icon.svg#arrow-down-icon"/>
+    <main class="main-question">
+        <section class="question">
+            <h1 class="question-title">Часто задаваемые вопросы</h1>
+            <ul class="list-question">
+                <li class="item-question">
+                    <svg>
+                        <use xlink:href="icon.svg#circle-question"/>
                     </svg>
-                </a>
-                <!--Эта история будет на последней страницу сайта-->
-                <!--<div class="hide-footer-container">
-                        <p class="footer-copyright">&copy;Digital Planet, 2019</p>
-                        <p class="footer-title">Детский VR планетарий. Все права защищены.</p>
-                        <ul class="hide-social-list">
-                            <li class="hide-social-list-item">
-                                <a href="#">
-                                    <img src="img/face.svg" width="8.25" height="16.5" alt="Facebook">
-                                </a>
-                            </li>
-                            <li class="hide-social-list-item">
-                                <a href="#">
-                                    <img src="img/vk.svg" width="21" height="11.25" alt="Вконтакте">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>-->
-            </div>
-        </footer>
-        <img class="kid-viar" src="img/kid_VR_main_page.png" width="450" height="350" alt="">
-    </div>
+                    <h2 class="question-title-chapter">Сколько длится сеанс? Дети не устают во время просмотра?</h2>
+                    <button class="question-button" type="button">
+                        <svg>
+                            <use xlink:href="icon.svg#plus-icon"/>
+                        </svg>
+                    </button>
+                    <p hidden>Какой то текст</p>
+                </li>
+                <li class="item-question">
+                    <svg>
+                        <use xlink:href="icon.svg#circle-question"/>
+                    </svg>
+                    <h2 class="question-title-chapter">Безопасны ли VR-очки для зрения ребёнка? Какие есть ограничения?</h2>
+                    <button class="question-button active" type="button">
+                        <svg>
+                            <use xlink:href="icon.svg#multipli-icon"/>
+                        </svg>
+                    </button>
+                    <p class="question-text">VR-очки были разработаны специально для того, чтобы каждый человек, независимo<br>от возраста, качества зрения и опыта использования аналогичных продуктов мог<br>безопасно и легко пользоваться этой технологией. У нас есть сертификат качествa<br>продукции и лицензия для её использования на территории РФ. Для людей с зрением, отличным от идеального, на VR-очках предусмотрена регулировка диоптрий.</p>
+                </li>
+                <li class="item-question active">
+                    <svg>
+                        <use xlink:href="icon.svg#circle-question"/>
+                    </svg>
+                    <h2 class="question-title-chapter">Дейсвтительно ли это образовательный метод, или это лишь игрушка?</h2>
+                    <button class="question-button" type="button">
+                        <svg>
+                            <use xlink:href="icon.svg#plus-icon"/>
+                        </svg>
+                    </button>
+                    <p hidden>Какой то текст</p>
+                </li>
+                <li class="item-question">
+                    <svg>
+                        <use xlink:href="icon.svg#circle-question"/>
+                    </svg>
+                    <h2 class="question-title-chapter">Всё понятно! Хочу заказать выезд VR планетария, что нужно сделать?</h2>
+                    <button class="question-button" type="button">
+                        <svg>
+                            <use xlink:href="icon.svg#plus-icon"/>
+                        </svg>
+                    </button>
+                    <p hidden>Какой то текст</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer-question">
+        <a href="#">
+            <img class="footer-arow" src="img/footer-arow.svg" width="15" height="7" alt="arow icon">
+        </a>
+    </footer>
 </body>
-
 </html>

@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: "Ubuntu", sans-serif;
     color: #FFFFFF;
+    background-color: #ababab;
+    
 }
 
 body.main-page {
@@ -9,10 +11,11 @@ body.main-page {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 /* не соответствует макету */
-body.product-page, body.explanation-page {
+body.product-page, body.explanation-page, body.tecnology-page, body.question-page {
     background-image: url(../img/background-pages.jpg);
     background-repeat: no-repeat;
     background-position: left center;
@@ -43,8 +46,7 @@ body.product-page, body.explanation-page {
     margin-top: 43px;
     margin-right: 80px;
     margin-bottom: 3px;
-    display: flex;
-    
+    display: flex;  
 }
 
 .logo img {
@@ -61,6 +63,19 @@ body.product-page, body.explanation-page {
     font-size: 18px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+}
+
+.main-logo {
+    width: 28px;
+    height: 28px;
+}
+
+.logo:hover #main-logo g path {
+    fill:#0DD1A2;
+}
+
+.logo:hover .logo-text {
+    color:#0DD1A2;
 }
 
 .site-navigation {
@@ -86,12 +101,9 @@ body.product-page, body.explanation-page {
 }
 
 .site-navigation-item-point {
-    display: flex;
-    padding-top: 7px;
-}
-
-.site-navigation-item-point img {
     display: block;
+    margin-top: 7px;
+    margin-right: 1px;
 }
 
 .small-button-order {
@@ -164,7 +176,7 @@ margin-bottom: 7px;
     margin-bottom: 154px;
 }
 
-.big-btn-order img {
+.big-btn-order svg {
     display: block;
     width: 31px;
     height: 31px;
@@ -200,7 +212,7 @@ margin-bottom: 7px;
     color: #FFFFFF;
 }
 
-.big-btn-video img {
+.big-btn-video svg {
     display: block;
     width: 31px;
     height: 31px;
@@ -256,6 +268,12 @@ margin-bottom: 7px;
     opacity: 0.64;
 }
 
+.social-list-item a {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
 .social-list-item:first-child:hover {
     opacity: 1;
 }
@@ -264,25 +282,20 @@ margin-bottom: 7px;
     opacity: 1;
 }
 
-.social-list-item:first-child img {
+.social-list-item a>.facebook {
     padding-top: 4px;
     padding-right: 11px;
-    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 10px;
 }
 
-.social-list-item:last-child img {
+.social-list-item a>.vk {
     padding-top: 9px;
     padding-right: 2px;
     padding-bottom: 8px;
     padding-left: 2px;
 }
 
-.social-list-item img {
-    display: block;
-}
-
-/*надо поменять отсюда и */
 .button-scroll-text {
     margin: 0;
     font-weight: 400;
@@ -294,7 +307,7 @@ margin-bottom: 7px;
     text-transform: uppercase;
 }
 
-.button-scroll img {
+.button-scroll svg {
     display: block;
     width: 17px;
     height: 9px;
@@ -319,8 +332,9 @@ margin-bottom: 7px;
     opacity: 0.64;
 
     margin-right: 420px;
+    text-decoration: none;
 }
-/*и до сюда*/
+
 h1 {
     font-weight: 500;
     font-size: 44px;
@@ -330,16 +344,19 @@ h1 {
     color: #0dd1a2;
 }
 
-.main-product-page {
+.main-product, .main-explanation, .main-tecnology, .main-question {
     width: 1239px;
     margin: 0 auto;
+}
+
+.main-product {
+    margin-bottom: 13px;
     
 }
 
 .main-product-content {
     margin-left: 26px;
     margin-right: 26px;
-    margin-bottom: 13px;
 }
 
 .main-product-page-title {
@@ -446,34 +463,40 @@ h1 {
     padding: 0;
     border: 1px solid #1c1c1c;
     cursor: pointer;
-}
-
-/*стрелку при наведении не сделать зеленой, потому что
-svg вшит в верстку как изолированная картинка*/
-
-.product-gallery-button-left, .product-gallery-button-right  {
-    display: block;
-    padding-top: 16px;
-    padding-right: 26px;
-    padding-bottom: 16px;
-    padding-left: 26px;
     background-color: #1c1c1c;
 }
 
-.fotter-product-page, .footer-explanation {
-    margin: 0 auto;
-    text-align: center;
+#arrow-left-icon path{
+    width: 8px;
+    height: 16px;
 }
 
-.fotter-product-page img, .footer-explanation {
+.button-left:hover svg path {
+    stroke: #0dd1a2;
+}
+
+#arrow-right-icon path {
+    width: 8px;
+    height: 16px;
+}
+
+.button-right:hover svg path {
+    stroke: #0dd1a2;
+}
+
+.fotter-product-page, .footer-explanation, .footer-tecnology, .footer-question {
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.64;
+}
+
+.fotter-product-page, .footer-explanation, .footer-tecnology {
     margin-bottom: 30px;
 }
 
 /* explanation */
 
 .main-explanation {
-    width: 1239px;
-    margin: 0 auto;
     margin-bottom: 46px;
 }
 
@@ -634,4 +657,246 @@ svg вшит в верстку как изолированная картинк�
     font-size: 15px;
     line-height: 130%;
     margin-bottom: 3px;
+}
+
+/* tecnology */
+.main-tecnology {
+    margin-bottom: 18px;
+}
+
+.tecnology-title {
+    width: 319px;
+    margin-top: 76px;
+    margin-left: 26px;
+    margin-bottom: 32px;
+}
+
+.tecnology-container {
+    display: flex;
+}
+
+.tecnology-text-one, .tecnology-text-two {
+    width: 280px;
+}
+.tecnology-text-one {
+    margin: 0;
+    margin-left: 54px;
+    margin-right: 10px;
+}
+
+.tecnology-text-one h2 {
+    margin-top: 47px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 132%;  
+}
+
+.tecnology-text-one p {
+    margin-top: 0;
+    margin-bottom: 80px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 130%;
+}
+
+.tecnology-text-one p:last-child {
+    margin-bottom: 0;
+}
+
+.tecnology-photo {
+    width: 480px;
+    height: 480px;
+    margin-right: 65px;
+    background-image: url(../img/Ellipse.svg);
+}
+
+.tecnology-photo-container {
+    margin: 36px 36px;
+    width: 408px;
+    height: 408px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+}
+
+.tecnology-photo-container .main-photo {
+    width: 417px;
+    margin-top: 105px;
+    margin-bottom: 90px;
+    margin-left: 11px;
+}
+
+.loup {
+    width: 85px;
+    height: 85px;
+    border:1px solid #15B28D;
+    border-radius: 50%;
+    background-color: #15B28D;
+    position: absolute;
+    top: 303px;
+    left: 310px;
+}
+.loup svg {
+    width: 40px; 
+    height: 40px;
+    margin-top: 25px;
+    margin-right: 18px;
+    margin-bottom: 20px;
+    margin-left: 27px;
+}
+
+.loup:hover {
+cursor: pointer;
+background-color: #0DD1A2;
+}
+
+.arrow-pointer-one {
+    width: 181px;
+    height: 115px;
+    position: absolute;
+    top: 24px;
+    right: 341px;
+}
+
+.arrow-pointer-two {
+    width: 409px;
+    height: 83;
+    position: absolute;
+    top: 179px;
+    right: 157px;
+}
+
+.arrow-pointer-three {
+    width: 124px;
+    height: 90px;
+    position: absolute;
+    top: 190px;
+    left: 374px;
+}
+
+.arrow-pointer-four {
+    width: 245px;
+    height: 98px;
+    position: absolute;
+    top: 24px;
+    left: 260px;
+}
+
+.tecnology-text-two {
+    margin: 0;
+    margin-right: 71px; 
+}
+
+.tecnology-text-two h2 {
+    margin-top: 47px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 132%; 
+}
+
+.tecnology-text-two p {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 130%;
+}
+
+.tecnology-text-two p:last-child {
+    margin-bottom: 0;
+}
+
+/*question */
+.main-question {
+    margin-bottom: 48px;
+}
+
+.question-title {
+    width: 591px;
+    margin: 0;
+    margin-top: 76px;
+    margin-left: 26px;
+    margin-bottom: 40px;
+}
+
+.list-question {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-question {
+    width: 904px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.item-question svg {
+    width: 8px;
+    height: 8px;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.item-question h2 {
+    margin: 0;
+    width: 613px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 132%;
+    color: #1c1c1c;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.item-question:nth-child(2) h2 {
+    margin: 0;
+    width: 709px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item-question:nth-child(2) p {
+    margin: 0;
+    width: 640px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 150%;
+    color: #1c1c1c;
+    margin-left: 50px;
+    margin-bottom: 35px;
+}
+
+.item-question:nth-child(3) h2 {
+    width: 731px;
+}
+
+.item-question:nth-child(4) h2 {
+    width: 714px;
+}
+
+.item-question button {
+    margin-left: auto;
+    margin-right: 0;
+    width: 72px;
+    border: 1px solid #15B28D;
+    background-color: #15B28D;
+}
+
+.item-question button svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    padding-bottom: 15px;
+}
+
+.item-question.active button svg {
+    width: 28px;
+    height: 28px;
 }

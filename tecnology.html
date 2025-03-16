@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Planet VR</title>
+    <title>About Product</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-<body class="main-page">
-    <div class="main-background"> 
+<body class="tecnology-page">
+    <header class="main-page-header">
         <header class="main-page-header">
             <nav class="main-nav">
                 <a href="index.html" class="logo">
@@ -51,7 +48,7 @@
                         </svg>
                     </li>
                     <li class="site-navigation-item">
-                        <a href="tecnology.html">Технология</a>
+                        <a class="active" href="tecnology.html">Технология</a>
                     </li>
                     <li>
                         <svg class="site-navigation-item-point" width="5" height="5">
@@ -74,72 +71,59 @@
                 <a class="contact" href="tel:88005553575">8 (800) 555 35 75</a>
             </nav>
         </header>
-        <main class="page-main">
-            <section class="main">
-                <h1 class="main-title">Digital Planet VR</h1>
-                <p class="main-text">Образовательный виртуальный планетарий в Новороссийске. Познавательное приключение
-                    в мир звёзд и галактик.</p>
-                <div class="main-container-button">
-                    <button class="big-btn-order">
-                        <svg width="31" height="31">
-                            <use xlink:href="icon.svg#order-icon"/>
-                        </svg>
-                        <p class="big-btn-title">Заказать</p>
-                    </button>
-                    <button class="big-btn-video">
-                        <svg width="31" height="31">
-                            <use xlink:href="icon.svg#video-icon"/>
-                        </svg>
-                        <p class="big-btn-title">Видео</p>
-                    </button>
+    <main class="main-tecnology">
+        <section class="tecnology">
+            <h1 class="tecnology-title">VR-технология</h1>
+            <div class="tecnology-container">
+                <div class="tecnology-text-one">
+                    <h2>Masters Glass VR-iii</h2>
+                    <p>Используем только оригинальные импортные VR-очки. Технологии протестированы и безопасны для глаз. Напряжение во время просмотра — как при прогулке за счёт качественного обёъмного  изображения.</p>
+                    <h2>Оборудование</h2>
+                    <p>Все фильмы воспроизводятся при помощи встроенных в очки экранов мобильных телефонов ведущих брендов. Наши техники привезут<br>т всё обордуование с собой: от вас нужно лишь помещение для урока.</p>
                 </div>
-            </section>
-        </main>
-        <footer class="page-footer">
-            <div class="footer-container">
-                <ul class="social-list">
-                    <li class="social-list-item">
-                        <a href="#">
-                            <svg class="facebook" width="11" height="22">
-                                <use xlink:href="icon.svg#facebook-icon"/>
+                <div class="tecnology-photo">
+                    <div class="tecnology-photo-container">
+                        <img class="main-photo" src="img/vr-main-photo-tecnology.png" width="417" height="214" alt="VR-очки">
+                        <div class="loup">
+                            <svg>
+                                <use xlink:href="icon.svg#loupe"/>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="social-list-item">
-                        <a href="#">
-                            <svg class="vk" width="28" height="15">
-                                <use xlink:href="icon.svg#vk-icon"/>
+                        </div>
+                        <div class="arrow-pointer-one">
+                            <svg width="181" height="115">
+                                <use xlink:href="icon.svg#arrow-pointer-one" />
                             </svg>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" class="button-scroll">
-                    <p class="button-scroll-text">Скролл вниз</p>
-                    <svg class="arrow-down-icon" width="17" height="9">
-                        <use xlink:href="icon.svg#arrow-down-icon"/>
-                    </svg>
-                </a>
-                <!--Эта история будет на последней страницу сайта-->
-                <!--<div class="hide-footer-container">
-                        <p class="footer-copyright">&copy;Digital Planet, 2019</p>
-                        <p class="footer-title">Детский VR планетарий. Все права защищены.</p>
-                        <ul class="hide-social-list">
-                            <li class="hide-social-list-item">
-                                <a href="#">
-                                    <img src="img/face.svg" width="8.25" height="16.5" alt="Facebook">
-                                </a>
-                            </li>
-                            <li class="hide-social-list-item">
-                                <a href="#">
-                                    <img src="img/vk.svg" width="21" height="11.25" alt="Вконтакте">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>-->
-            </div>
-        </footer>
-        <img class="kid-viar" src="img/kid_VR_main_page.png" width="450" height="350" alt="">
-    </div>
+                        </div>
+                        <div class="arrow-pointer-two">
+                            <svg width="409" height="83">
+                                <use xlink:href="icon.svg#arrow-pointer-two" />
+                            </svg>
+                        </div>
+                        <div class="arrow-pointer-three">
+                            <svg width="124" height="90">
+                                <use xlink:href="icon.svg#arrow-pointer-three" />
+                            </svg>
+                        </div>
+                        <div class="arrow-pointer-four">
+                            <svg width="245" height="99">
+                                <use xlink:href="icon.svg#arrow-pointer-four" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="tecnology-text-two">
+                    <h2>Безопасность</h2>
+                    <p>Зритель всегда находится в центре зала, и четко зафиксирован<br> в пространстве, что делает просмотр понятным и комфортным. Технология виртуальной реальности не портит зрение, а эффект присутсвтия развивает креативность<br> и пространственное мышление.</p>
+                    <h2>Система крепления</h2>
+                    <p>Подходит под любой размер головы, даже для первоклассника. Во время просмотра не получится навредить голове ребёнка за счёт тщательно проработанной конструкции очков.</p>
+                </div>
+            </div>     
+        </section>
+    </main>
+    <footer class="footer-tecnology">
+        <a href="#">
+            <img class="footer-arow" src="img/footer-arow.svg" width="15" height="7" alt="arow icon">
+        </a>
+    </footer>
 </body>
-
 </html>
