@@ -1,9 +1,11 @@
+html {
+    height: 100%;
+}
 body {
     margin: 0;
     font-family: "Ubuntu", sans-serif;
     color: #FFFFFF;
     background-color: #ababab;
-    
 }
 
 body.main-page {
@@ -11,16 +13,24 @@ body.main-page {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
     position: relative;
 }
 
 /* не соответствует макету */
-body.product-page, body.explanation-page, body.tecnology-page, body.question-page {
+body.product-page, body.explanation-page, body.tecnology-page, body.question-page, body.contact-page {
     background-image: url(../img/background-pages.jpg);
     background-repeat: no-repeat;
     background-position: left center;
     background-size: cover;
+    position: relative;
 }
+
+/*.main-background {
+    background-image: url(../img/kid_VR_main_page.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}*/
 
 .main-background .kid-viar {
     width: 450px;
@@ -28,6 +38,14 @@ body.product-page, body.explanation-page, body.tecnology-page, body.question-pag
     position: absolute;
     bottom: 0;
     right: 0;
+}
+
+.background-question .kid-viar-question {
+    width: 235px;
+    height: 264px;
+    position: absolute;
+    top: 504px;
+    left: 1101px;
 }
 
 .main-page-header {
@@ -822,6 +840,9 @@ background-color: #0DD1A2;
 }
 
 .list-question {
+    margin: 0;
+    padding: 0;
+    margin-left: 26px;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -832,13 +853,15 @@ background-color: #0DD1A2;
     display: flex;
     flex-wrap: wrap;
     background-color: #fff;
+    margin: 0;
     margin-bottom: 5px;
+    align-items: center;
 }
 
 .item-question svg {
     width: 8px;
     height: 8px;
-    margin-top: 30px;
+    margin-top: 17px;
     margin-right: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
@@ -870,7 +893,7 @@ background-color: #0DD1A2;
     line-height: 150%;
     color: #1c1c1c;
     margin-left: 50px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .item-question:nth-child(3) h2 {
@@ -881,17 +904,23 @@ background-color: #0DD1A2;
     width: 714px;
 }
 
+.item-question:last-child {
+    margin-bottom: 0;
+}
+
 .item-question button {
     margin-left: auto;
     margin-right: 0;
+    padding: 0;
     width: 72px;
+    height: 72px;
     border: 1px solid #15B28D;
     background-color: #15B28D;
 }
 
 .item-question button svg {
-    width: 30px;
-    height: 30px;
+    width: 23px;
+    height: 23px;
     display: block;
     padding-bottom: 15px;
 }
@@ -899,4 +928,9 @@ background-color: #0DD1A2;
 .item-question.active button svg {
     width: 28px;
     height: 28px;
+}
+
+.question-button:hover {
+    background-color: #0dd1a2;
+    cursor: pointer;
 }
