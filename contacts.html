@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>VR планетарий</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сайт образовательного виртуального планетария Digital Planet VR">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="page-header-navigation">
+      <a class="page-header-logo" href="index.html">
+        <img class="logo" src="#" alt="Логотип цифрового планетариума">
+      </a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="product.html">О продукте</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="explanation.html">Как работает</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="technology.html">Технология</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="questions.html">Вопросы</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-active">Контакты</a>
+        </li>
+      </ul>
+      <button class="button order-button-header" type="button">Заказать</button>
+      <a class="contact" href="tel.:+88005553575">8(800)555 35 75</a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="title-page-main">Контакты</h1>
+    <ul class="contact-list">
+      <li class="contact-item">
+        <h2 class="title-contact-item">Новороссийск</h2>
+        <address>
+          <a class="contact-phone" href="tel:+79234650141">+7(923)426-01-41</a><br>
+          <!--добавил пока тег <br>-->
+          <a class="contact-email" href="mailto:digitalPlanetNR@mail.ru">digitalPlanetNR@mail.ru</a>
+        </address>
+      </li>
+      <li class="contact-item">
+        <h2 class="title-contact-item">Москва</h2>
+        <address>
+          <a class="contact-phone" href="tel:+74958552419">+7(495)855-24-19</a><br>
+          <!--добавил пока тег <br>-->
+          <a class="contact-email" href="mailto:digitalPlanetMoscow@mail.ru">digitalPlanetMoscow@mail.ru</a>
+        </address>
+      </li>
+      <li class="contact-item">
+        <h2 class="title-contact-item">Саратов</h2>
+        <address>
+          <a class="contact-phone" href="tel:+79422212178">+7(942)221-21-78</a><br>
+          <!--добавил пока тег <br>-->
+          <a class="contact-email" href="mailto:digitalPlanetSaratov@mail.ru">digitalPlanetSaratov@mail.ru</a>
+        </address>
+      </li>
+    </ul>
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post" id="form-feedback" name="form-feedback" >
+      <h2 class="form-title">Остались вопросы? Задайте их нам!</h2>
+      <p class="form-text">Мы обязательно свяжемся с вами в течение двух рабочих дней</p>
+      <fieldset class="contact-group">
+        <label class="visualy-hidden" for="name">Введите имя:</label>
+        <input class="field-name" type="text" name="name" id="name"  placeholder="Ваше имя" required>
+        <label class="visualy-hidden" for="email">Введите e-mail:</label>
+        <input class="field-email" type="text" name="email" id="email" placeholder="Ваш e-mail" required>
+      </fieldset>
+      <fieldset class="questions-qroup">
+        <label class="visualy-hidden" for="quections">Введите вопрос:</label>
+        <textarea class="quections" name="quections" id="quections" rows="6" placeholder="Что вас интересует?"></textarea>
+      </fieldset>
+      <button class="button button-form-feedback" type="submit">Отправить</button>
+    </form>
+  </main>
+
+  <footer class="last-page-footer">
+    <p class="copyright">© Digital Planet, 2019</p>
+    <p class="footer-text">Детский VR планетарий. Все права защищены.</p>
+    <ul class="social-list">
+      <li class="social-item">
+        <a class="social-link" href="#">
+          <span class="visualy-hidden">Фейсбук</span>
+        </a>
+      </li>
+      <li class="social-item">
+        <a class="social-link" href="https://vk.com/htmlacademy">
+          <span class="visualy-hidden">В контакте</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
+</html>
