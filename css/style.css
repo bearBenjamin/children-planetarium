@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Medium.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Regular.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Bold.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../fonts/Ubuntu-Light.woff2') format('woff2'),
+        url('../fonts/Ubuntu-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  min-height: 100%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: normal;
+  color: #ffffff;
+  background-color: #7f7f78;
+}
+
+.main-background {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+
+  background-image: url("../image/background/main-page_boy_background.png"), url("../image/background/main_page_background_image.jpg");
+  background-position: right bottom, center;
+  background-repeat: no-repeat;
+  background-size: 430px 350px, cover;
+}
+
+.page-body-background {
+  flex-direction: column;
+  background-image: url("../image/background/content_page_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.page-background {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+
+  background-image: url("../image/background/question_background_boy.png"), url("../image/background/content_page_background.jpg");
+  background-position: right bottom, center;
+  background-repeat: no-repeat;
+  background-size: 235px 264px, cover;
+}
+
+.main-gum {
+  flex-grow: 1;
+}
+
+.button {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: inherit;
+}
+
+/* page-header */
+
+.page-header-navigation {
+  display: flex;
+  max-width: 1238px;
+  margin: 0 auto;
+}
+
+.page-header-logo {
+  margin-right: 80px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 619px;
+  margin-right: 91px;
+}
+
+.navigation-link{
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+.order-button-header {
+  width: 108px;
+  margin-right: 20px;
+
+  font-size: 14px;
+  border: 2px solid #0dd1a2;
+  border-radius: 2px;
+}
+
+.header-contact-phone {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #ffffff;
+}
+
+/* page-main */
+
+.main-container {
+  width: 1238px;
+  margin: 0 auto;
+}
+
+.title-main {
+  font-weight: 400;
+  font-size: 96px;
+}
+
+.text-page-main {
+  font-size: 17px;
+  line-height: 150%;
+}
+
+.order-button-main {
+  font-size: 21px;
+  background-color: #15b28d;
+  border: 3px solid #15b28d;
+  border-radius: 3px;
+}
+
+.content-button-main {
+  font-size: 21px;
+  border: 3px solid #15b28d;
+  border-radius: 3px;
+}
+
+/* main-footer */
+
+.footer-container {
+  display: flex;
+  width: 1238px;
+  margin: 0 auto;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 399px;
+}
+
+.social-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  width: 288px;
+  margin: 0 auto;
+}
+
+.text-footer {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 138%;
+  letter-spacing: 0.12em;
+  text-align: center;
+}
+
+/* main product */
+
+.title-page-main {
+  font-weight: 500;
+  font-size: 44px;
+}
+
+.title-page {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.left-count-photo,
+.slah,
+.right-count-photo {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.button-left-slider,
+.button-right-slider {
+  background-color: #1c1c1c;
+  border: none;
+}
+
+/* explanation */
+
+.card-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.image-count {
+  font-weight: 700;
+  font-size: 28px;
+  color: #0dd1a2;
+  background-color: #ffffff;
+}
+
+.title-card-item {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.text-card-item {
+  line-height: 130%;
+}
+
+/* technology */
+
+.title-card-item-technology {
+  line-height: 132%;
+}
+
+.container-image-VR {
+  background-color: #ffffff;
+}
+
+/* question */
+.questions-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title-question {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 132%;
+
+  color: #1c1c1c;
+  background-color: #ffffff;
+}
+
+.button-open {
+  background-color: #15b28d;
+}
+
+.button-close {
+  background-color: #15b28d;
+}
+
+.text-answer {
+  line-height: 150%;
+
+  color: #1c1c1c;
+  background-color: #ffffff;
+}
+
+/* contact */
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-phone,
+.contact-email {
+  font-style: normal;
+  line-height: 130%;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.form-text {
+  line-height: 130%;
+}
+
+.button-form-feedback {
+  font-size: 14px;
+
+  border: 2px solid #0dd1a2;
+  border-radius: 2px;
+}
+
+/* last-page-footer */
+.last-page-footer {
+  width: 1238px;
+  margin: 0 auto;
+  padding: 4px 13px 3px 37px;
+}
+
+.last-page-footer-container {
+  display: flex;
+  font-size: 13px;
+  line-height: 130%;
+}
