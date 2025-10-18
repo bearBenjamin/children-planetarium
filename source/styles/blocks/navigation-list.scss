@@ -4,8 +4,37 @@
 }
 
 .navigation-list__item {
+  position: relative;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.navigation-list__item:first-child {
+  margin-right: 2px;
+}
+
+.navigation-list__item-main {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.navigation-list__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  top: 6px;
+  right: -22px;
+  border-radius: 50%;
+  background-color: #b0acac;
+
+  @media (max-width: 768px) {
+    content: none;
+  }
 }
 
 .navigation-list__link {

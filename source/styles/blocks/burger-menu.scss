@@ -1,0 +1,75 @@
+.burger-menu {
+  display: none;
+  background-color: inherit;
+
+  &--open {
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 49px;
+      right: 0;
+      width: 24px;
+      height: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &--close {
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 49px;
+      right: 0;
+      z-index: 2;
+      display: block;
+      width: 21px;
+      height: 20px;
+    }
+  }
+}
+
+.burger-menu--open .long-line {
+  @media (max-width: 768px) {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 0 0 #e0e0e0;
+  }
+}
+
+.burger-menu--open .short-line {
+  @media (max-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    width: 16px;
+    height: 2px;
+    background-color: #e0e0e0;
+  }
+}
+
+.burger-menu--close .long-line {
+  @media (max-width: 768px) {
+    display: block;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    background-color: #e0e0e0;
+    transform: rotate(-45deg);
+  }
+}
+
+.burger-menu--close .short-line {
+  @media (max-width: 768px) {
+    display: block;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    background-color: #e0e0e0;
+    transform: rotate(45deg);
+  }
+}

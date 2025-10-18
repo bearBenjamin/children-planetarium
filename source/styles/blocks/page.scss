@@ -1,5 +1,5 @@
 .page {
-  height: 100%;
+  height: auto;
 }
 
 .page__body {
@@ -13,9 +13,14 @@
 
 .page__body-site {
   background-image: url("../../images/index-bg-main-kid-VR@1x.png"), url("../../images/index-site-bg@1x.jpg");
-  background-size: 430px 350px, cover;
+  background-size: 31.5% auto, cover;
   background-position: bottom right, center;
   background-repeat: no-repeat;
 }
 
 // .page__body-page {}
+
+
+.page__header-site {
+  position: relative;
+}
