@@ -1,9 +1,14 @@
 .footer-site {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-bottom: 28px;
-  gap: 397px;
   color: $white;
   background-color: inherit;
+
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer-site__social-list {
@@ -26,6 +31,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .footer-site__social-image {
@@ -35,6 +44,9 @@
 .footer-site__link {
   position: relative;
   width: 288px;
+  padding-top: 1px;
+  padding-right: 3px;
+  justify-self: center;
   font-weight: 400;
   font-size: 11px;
   line-height: 15px;
@@ -43,6 +55,10 @@
   text-transform: uppercase;
   color: $white;
   opacity: 0.64;
+
+  @media (max-width: 768px) {
+    height: 28px;
+  }
 }
 
 .footer-site__link::after {
@@ -51,7 +67,7 @@
   width: 17px;
   height: 9px;
   position: absolute;
-  top: 21px;
+  top: 22px;
   left: 50%;
   transform: translateX(-50%);
   background-color: $white;

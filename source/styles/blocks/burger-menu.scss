@@ -13,6 +13,10 @@
       flex-direction: column;
       justify-content: space-between;
     }
+
+    @media (max-width: 320px) {
+      top: 31px;
+    }
   }
 
   &--close {
@@ -24,6 +28,10 @@
       display: block;
       width: 21px;
       height: 20px;
+    }
+
+    @media (max-width: 320px) {
+      top: 31px;
     }
   }
 }

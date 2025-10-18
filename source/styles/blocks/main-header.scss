@@ -2,6 +2,10 @@
   padding-top: 38px;
   color: $white;
   background-color: inherit;
+
+  @media (max-width: 320px) {
+    padding-top: 20px;
+  }
 }
 
 .main-header__nav {
@@ -35,6 +39,10 @@
       grid-template-rows: max-content max-content max-content;
       grid-template-columns: 1fr max-content 1fr;
       background-color: $black;
+    }
+
+    @media (max-width: 320px) {
+      padding-top: 20px;
     }
   }
 }
