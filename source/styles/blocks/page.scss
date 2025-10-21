@@ -1,0 +1,33 @@
+.page {
+  height: auto;
+}
+
+.page__body {
+  margin: 0;
+  font-family: $font-family;
+  font-weight: 300;
+  font-size: 15px;
+  color: $white;
+  background-color: #959595;
+}
+
+.page__body-site {
+  background-image: url("../../images/index-bg-main-kid-VR@1x.png"), url("../../images/index-site-bg@1x.jpg");
+  background-size: 31.5% auto, cover;
+  background-position: bottom right, center;
+  background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    background-image: url("../../images/index-site-bg@1x.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+// .page__body-page {}
+
+
+.page__header-site {
+  position: relative;
+}

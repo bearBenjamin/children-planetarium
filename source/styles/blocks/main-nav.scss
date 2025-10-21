@@ -1,0 +1,148 @@
+// .main-nav {
+//   color: $white;
+//   background-color: inherit;
+
+//   &--close {
+//     background-color: $black;
+//   }
+// }
+
+// .main-nav__logo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 15px;
+//   width: 190px;
+//   margin-right: auto;
+
+//   @media (max-width: 1280px) {
+//     width: 28px;
+//     margin-right: 0;
+//   }
+
+//   @media (max-width: 1024px) {
+//     margin-right: 0;
+//   }
+// }
+
+// .main-nav__logo-image {
+//   display: block;
+//   width: 28px;
+//   height: 28px;
+// }
+
+// .main-nav__logo-text {
+//   display: block;
+//   width: 148px;
+//   height: 14px;
+
+//   @media (max-width: 1280px) {
+//     display: none;
+//   }
+// }
+
+// .main-nav__list {
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+//   align-items: center;
+//   padding-top: 8px;
+//   padding-bottom: 8px;
+//   margin-right: 70px;
+//   gap: 38px;
+//   flex-wrap: wrap;
+//   list-style: none;
+
+//   @media (max-width: 1024px) {
+//     margin-right: 0;
+//   }
+
+//   @media (max-width: 768px) {
+//     display: none;
+//   }
+// }
+
+// .main-nav--close .main-nav__list {
+//   @media (max-width: 768px) {
+//     grid-column: 1/4;
+//     grid-row: 2/3;
+//     display: flex;
+//     align-items: start;
+//     padding-top: 50px;
+//     padding-bottom: 50px;
+//     padding-left: 24px;
+//     flex-direction: column;
+//   }
+// }
+
+// .main-nav__button {
+//   margin: 0;
+//   border-color: transparent;
+//   box-shadow: inset 0 0 0 2px #0dd1a2;
+
+//   @media (max-width: 924px) {
+//     display: none;
+//   }
+
+//   @media (max-width: 768px) {
+//     display: block;
+//   }
+// }
+
+// .main-nav--close .main-nav__inner-contact {
+//   @media (max-width: 768px) {
+//     grid-column: 1/4;
+//     grid-row: 3/4;
+//     display: flex;
+//     flex-direction: column;
+//     padding-top: 30px;
+//     padding-bottom: 28px;
+//     padding-left: 24px;
+//     background-color: $black;
+//   }
+// }
+
+// .main-nav__contact {
+//   font-weight: 700;
+//   font-size: 16px;
+//   color: $white;
+
+//   @media (max-width: 1024px) {
+//     display: none;
+//   }
+// }
+
+// .main-nav--close .main-nav__contact {
+//   @media (max-width: 768px) {
+//     display: block;
+//     margin-bottom: 20px;
+//   }
+// }
+
+// .main-nav__social-list {
+//   display: none;
+// }
+
+// .main-nav--close .main-nav__social-list {
+//   @media (max-width: 768px) {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//     display: flex;
+//   }
+// }
+
+// .main-nav__button-burger {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+
+//   @media (max-width: 768px) {
+//     position: absolute;
+//     top: 50px;
+//     right: 4px;
+//     width: 24px;
+//     height: 14px;
+//     border: none;
+//   }
+// }

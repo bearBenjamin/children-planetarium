@@ -8,12 +8,15 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body-page">
   <div class="wrapper">
     <header class="main-header">
       <nav class="main-header__nav main-nav">
         <a class="main-nav__logo" href="index.html">
-          <img class="main-nav__logo-image" src="#" width="193" height="28" alt="Логоти компании Digital planet">
+          <svg class="main-nav__logo-image" viewBox="0 0 193 28" width="193" height="28" aria-hidden="true" focusable="false">
+            <use href="icons/stack.svg#logo"></use>
+            <span class="visually-hidden">Логотип компании Digital planet</span>
+          </svg>
         </a>
         <ul class="main-nav__list navigation-list">
           <li class="navigation-list__item">
@@ -66,7 +69,7 @@
               <label class="visually-hidden" for="name">Имя</label>
               <input class="contact__form-field" id="name" name="name-client" type="text" placeholder="Ваше имя" required>
               <label class="visually-hidden" for="email">Email</label>
-              <input class="contact-form-field" id="email" name="email" type="text" placeholder="Ваш e-mail" required>
+              <input class="contact__form-field" id="email" name="email" type="text" placeholder="Ваш e-mail" required>
             </div>
             <label class="visually-hidden" for="question">Вопросы</label>
             <textarea class="contact__question-field" id="question" name="question" autocomplete="off" placeholder="Что вас интересует?" required></textarea>

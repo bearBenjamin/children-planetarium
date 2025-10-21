@@ -1,0 +1,35 @@
+/* GLOBAL */
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
+
+/* BLOCKS */
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/wrapper.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/navigation-list.scss";
+@import "./blocks/burger-menu.scss";
+@import "./blocks/main-site.scss";
+@import "./blocks/footer-site.scss";
+@import "./blocks/main-page.scss";
+@import "./blocks/about.scss";
+@import "./blocks/title.scss";
+@import "./blocks/slider-container.scss";
+@import "./blocks/footer-page.scss";
+@import "./blocks/work.scss";
+@import "./blocks/work-cards.scss";
+@import "./blocks/work-card.scss";
+@import "./blocks/work-slider.scss";
+@import "./blocks/technology.scss";
+@import "./blocks/technology-content.scss";
+@import "./blocks/technology-item.scss";
+@import "./blocks/technology-slider.scss";
+@import "./blocks/question.scss";
+@import "./blocks/question-accordeon.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/content-item.scss";
+@import "./blocks/footer-last-page.scss";

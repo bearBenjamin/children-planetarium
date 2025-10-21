@@ -1,0 +1,16 @@
+.button {
+  padding: 9px 15px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: inherit;
+  border: 2px solid $brand-brighter;
+  border-radius: 2px;
+}
+
+.button--color {
+  background-color: $brand;
+}
