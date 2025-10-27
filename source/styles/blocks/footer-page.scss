@@ -1,3 +1,25 @@
-// .footer-page {}
+.footer-page {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-// .footer-page__link {}
+  @media (max-width: 964px) {
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.footer-page__link {
+  display: block;
+  width: 17px;
+  height: 9px;
+  background-color: rgba(255, 255, 255, 0.64);
+  mask-image: url("../../icons/arrow-scroll.svg");
+  mask-size: 17px 9px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}

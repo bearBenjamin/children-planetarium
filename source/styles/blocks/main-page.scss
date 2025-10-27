@@ -1,3 +1,21 @@
 .main-page {
   flex-grow: 1;
+  color: $white;
+  background-color: inherit;
+}
+
+.main-page__about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  @media (max-width: 964px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto max-content;
+    justify-items: center;
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 21px;
+  }
 }
