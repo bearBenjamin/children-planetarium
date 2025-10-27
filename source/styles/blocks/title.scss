@@ -1,1 +1,14 @@
-// .title {}
+.title {
+  font-weight: 500;
+  font-size: 44px;
+  line-height: normal;
+  color: $white;
+
+  @media (max-width: 1024px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
+}
